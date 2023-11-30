@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: labl-step3-deployment
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: labl-step3
+  template:
+    metadata:
+      labels:
+        app: labl-step3
+    spec:
+      containers:
+      - name: labl-step3
+        image: sgan1981a/labl_step3:latest
+      
+        ports:
+        - containerPort: 80
+      
+
+
