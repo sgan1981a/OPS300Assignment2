@@ -11,6 +11,9 @@
       loop:
         - device-mapper-persistent-data
         - lvm2
+        - net-tools
+        - bind-utils
+        - wget
 
     - name: Add Docker CE repo
       get_url:
