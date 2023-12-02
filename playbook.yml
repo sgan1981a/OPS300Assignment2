@@ -13,7 +13,7 @@
         - lvm2
         - net-tools
         - bind-utils
-        - wget
+        - iftop
 
     - name: Add Docker CE repo
       get_url:
